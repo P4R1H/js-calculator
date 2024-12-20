@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculatorBody {
+    background-color: #333230;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid #333;
+    gap: 10px;
+    display: flex; 
+    flex-direction: column;
+}
+
+
+.input-container {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    font-size: 24px;
+    text-align: right;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    background-color: #7f8000;
+    box-sizing: border-box;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 buttons per row for numbers */
+    gap: 10px;
+    flex: 3; /* Takes up more space */
+}
+
+.operators {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for operators */
+    gap: 10px;
+    flex: 1; /* Takes up less space */
+}
+
+button {
+    font-size: 18px;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+button:active {
+    background-color: #ccc;
+}
+
+button#equals {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button#equals:hover {
+    background-color: #45a049;
+}
+
+button#clear {
+    background-color: #f44336;
+    color: white;
+}
+
+button#clear:hover {
+    background-color: #e53935;
+}
